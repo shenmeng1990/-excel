@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://mysqlos:3306/springdb?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:cn/com/yitong/excel/dao/*.xml
+  type-aliases-package: cn.com.yitong.excel.model
